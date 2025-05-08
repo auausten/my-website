@@ -15,7 +15,7 @@ body {
 
 .top-bar {
     display: flex;
-    gap: 10px;
+    gap: 12px;
 }
 
 .logo {
@@ -23,16 +23,13 @@ body {
     margin-top: 25px;
 }
 
-
-
 #name {
     font-size: 24px;
     font-weight: 550;
 }
 
 .title {
-    width: 100%;
-    max-width: 800px;
+    width: 70%;
     margin: auto;
     padding-bottom: 100px;
 }
@@ -75,8 +72,7 @@ body {
 }
 
 .projects {
-    width: 100%;
-    max-width: 800px;
+    width: 70%;
     margin: auto;
 }
 
@@ -105,7 +101,7 @@ img {
     border-radius: 12px;
     width: 100%;
     height: auto;
-    aspect-ratio: 4/3;
+    aspect-ratio: 3/2;
     object-fit: cover;
 }
 
