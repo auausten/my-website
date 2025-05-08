@@ -5,20 +5,42 @@ body {
     background-color: #f1f1f4;
 }
 
+#logo {
+    border-radius: 5px;
+    width: 5%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.top-bar {
+    display: flex;
+    gap: 10px;
+}
+
+.logo {
+    display: inline-block;
+    margin-top: 25px;
+}
+
+
+
 #name {
     font-size: 24px;
     font-weight: 550;
 }
 
 .title {
-    width: 60%;
+    width: 100%;
+    max-width: 800px;
     margin: auto;
     padding-bottom: 100px;
 }
 
 #main-text {
-    font-size: 64px;
+    font-size: 48px;
     font-weight: 550;
+    line-height: 1.2;
 }
 
 .link-row {
@@ -53,7 +75,8 @@ body {
 }
 
 .projects {
-    width: 60%;
+    width: 100%;
+    max-width: 800px;
     margin: auto;
 }
 
@@ -73,7 +96,7 @@ table {
 
 th, td {
     padding: 12px;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 550;
     text-align: left;
 }
@@ -81,7 +104,8 @@ th, td {
 img {
     border-radius: 12px;
     width: 100%;
-    height: 331px;
+    height: auto;
+    aspect-ratio: 4/3;
     object-fit: cover;
 }
 
@@ -95,4 +119,53 @@ img {
 
 .year {
     font-weight: 400;
+}
+
+@media (max-width: 768px) {
+    #main-text {
+        font-size: 32px;
+    }
+
+    .link {
+        font-size: 18px;
+    }
+
+    .link-row {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    table {
+        display: block;
+        margin: auto;
+    }
+
+    tr {
+        display: block;
+        margin-bottom: 24px;
+    }
+
+    th {
+        display: block;
+        width: 95%;
+    }
+
+    .project-title {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 4px;
+        font-size: 20px;
+    }
+
+    #name, #projects {
+        text-align: center;
+    }
+}
+
+th img {
+    transition: transform 0.3s ease;
+}
+
+th:hover img {
+    transform: scale(1.05);
 }
