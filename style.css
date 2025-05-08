@@ -6,10 +6,9 @@ body {
 }
 
 #logo {
+    width: 25px;
+    height: 25px;
     border-radius: 5px;
-    width: 5%;
-    height: auto;
-    aspect-ratio: 1/1;
     object-fit: cover;
 }
 
